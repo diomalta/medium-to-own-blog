@@ -111,7 +111,7 @@ const WebmentionLink = Styled.a`
 
 const Avatar = Styled(Image)`
   margin-bottom: 0;
-  min-width: 150px
+  min-width: 150px;
   border-radius: 100%;
   border: 8px solid ${theme.colors.primary};
 `
@@ -159,7 +159,7 @@ function Bio() {
           <Title>{author}</Title>
         </WebmentionLink>
         <SocialLinks>
-          {Object.keys(social).map(s =>
+          {Object.keys(social).map((s) =>
             social[s] ? (
               <li key={s}>
                 <a
